@@ -1,84 +1,77 @@
 # HW 3 -- Networking
 
 
+<details> NAT translates the source IP address.
+	<summary>Traditional, unidirectional NAT alters what part of the IP packet?</summary>
+</details>
+
 <details> Traditional, unidirectional NAT alters what part of the IP packet?
-	<summary>NAT translates the source IP address.</summary>
+	<summary>NAT can be made bidirectional by adding what component to the system in addition to the NAT server?</summary>
 </details>
 
-<details> NAT can be made bidirectional by adding what component to the system in addition to the NAT server?
-	<summary>A local DNS server</summary>
+<details> port numbers
+	<summary>Instead of using IP addresses, NAT can be configured to use what type of data for mulitplexing/demultiplexing</summary>
 </details>
 
-<details> Instead of using IP addresses, NAT can be configured to use what type of data for mulitplexing/demultiplexing
-	<summary>port numbers</summary>
+<details> NAT was created to address the scarcity of IPv4 addresses
+	<summary>What was the original motivation of NAT? </summary>
 </details>
 
-<details> What was the original motivation of NAT? 
-	<summary>NAT was created to address the scarcity of IPv4 addresses</summary>
+<details> It lacks inbound connectivity
+	<summary>What is the main disadvantage of traditional NAT?</summary>
 </details>
 
-<details> What is the main disadvantage of traditional NAT?
-	<summary>It lacks inbound connectivity</summary>
+<details> Packet filtering
+	<summary>What operation do traditional firewalls perform?</summary>
 </details>
 
-<details> What operation do traditional firewalls perform?
-	<summary>Packet filtering</summary>
+<details> the rules are grouped into chains 
+	<summary>In iptables, how are firewall rules grouped?</summary>
 </details>
 
-<details> In iptables, how are firewall rules grouped?
-	<summary>the rules are grouped into chains </summary>
+<details> 
+	<ul>
+		<li> INPUT   -- filters for packets headed to the host </li>
+		<li> OUTPUT  -- filters for packets being sent out by the host</li>
+		<li> FORWARD -- filters for packets being routed </li>
+	</ul>
+	<summary> What are the three chains in the filter table of iptables, and what is the purpose of each chain? </summary>
 </details>
 
-<details> What are the three chains tin the filter table of iptables, and what is the purpose of each chain?
-	<summary>
-		<ul>
-			<li>
-				INPUT --  filters for packets headed to the host
-			</li>
-			<li>
-				OUTPUT -- filters for packets being sent out by the host
-			</li>
-			<li>
-				FORWARD -- filters for packets being routed
-			</li>
-		</ul>
-	</summary>
+<details> ACCEPT
+	<summary>If a rule within a chain allows a packet to proceed, what target is used?</summary>
 </details>
 
-<details> If a rule within a chain allows a packet to proceed, what target is used?
-	<summary>ACCEPT</summary>
+<details> DROP or REJECT
+	<summary>If a rule within a chain prohibits a packet from proceeding, what target is used?</summary>
 </details>
 
-<details> If a rule within a chain prohibits a packet from proceeding, what target is used?
-	<summary>DROP or REJECT</summary>
+<details> the policy target is used when no rule matches
+	<summary>If a chain contains no rules that match a relevant packet, what aspect of the chain is used to decide which target to apply?</summary>
 </details>
 
-<details> If a chain contains no rules that match a relevant packet, what aspect of the chain is used to decide which target to apply?
-	<summary>the policy target is used when no rule matches</summary>
-</details>
-
-<details> A firewall that examines the application layer protocol of a packet is performing what operation?
-	<summary>deep packet inspection</summary>
+<details> deep packet inspection
+	<summary>A firewall that examines the application layer protocol of a packet is performing what operation?</summary>
 </details>
 
 <details> A firewall rule that drops packets based on their application layer protocol violates what FCC rule?
 	<summary>Net Neutrality</summary>
 </details>
 
-<details> Is NAT a type of firewall?
-	<summary>Although some think NAT has firewall-like security, NAT is not a type of firewall</summary>
+<details> Although some think NAT has firewall-like security, NAT is not a type of firewall
+	<summary>Is NAT a type of firewall?</summary>
 </details>
 
-<details> What does the acronym HTTP stand for?
-	<summary>Hyper Text Transfer Protocol</summary>
+<details> Hyper Text Transfer Protocol
+	<summary>What does the acronym HTTP stand for?</summary>
 </details>
 
-<details> What was the original purpose of the World Wide Web?
-	<summary>To transfer papers among physicists at CERN</summary>
+<details> To transfer papers among physicists at CERN
+	<summary>What was the original purpose of the World Wide Web?</summary>
 </details>
 
-<details> What is the transport protocol specification for HTTP?
-	<summary>the HTTP RFC requires only that HTTP be conducted over a reliable transport; it does not specify a particular transport application protocol </summary>
+<details> the HTTP RFC requires only that HTTP be conducted over a reliable transport; it does not specify a particular transport application protocol 
+	<summary> What is the transport protocol specification for HTTP? </summary>
 </details>
 
 <details> What is the default port for HTTP?
@@ -97,104 +90,124 @@
 <details> What are the parts of an HTTP message?
 	<summary>
 		<ul>
-			<li>the Request/Response line</li>
-			<li>headers</li>
-			<li>a blank line</li>
-			<li>the message body, if any</li>
+			<li> the Request/Response line	 </li>
+			<li> headers					 </li>
+			<li> a blank line			 	 </li>
+			<li> the message body, if any 	 </li>
 		</ul>
 	</summary>
 </details>
 
-<details> What are the two most common request methods used in HTTP?
-	<summary>
-		<ul>
+<details><ul>
 			<li>GET</li>
 			<li>POST</li>
 		</ul>
+	<summary>
+		 What are the two most common request methods used in HTTP?
 	</summary>
 </details>
 
-<details> In HTTP, what is the Status-Code?
-	<summary>a 3 digit number that indicates the nature of the response</summary>
+<details> a 3 digit number that indicates the nature of the response
+	<summary>In HTTP, what is the Status-Code?</summary>
 </details>
 
-<details> in the MySQL binary protocol, what are the first three bytes of each packet used for?
-	<summary> they indicate the length of the packet payload</summary>
+<details> they indicate the length of the packet payload
+	<summary>in the MySQL binary protocol, what are the first three bytes of each packet used for? </summary>
 </details>
 
-<details> What is the purpose of RMI?
-	<summary>RMI lets programmers execute functions on remote hosts</summary>
+<details> RMI lets programmers execute functions on remote hosts
+	<summary>What is the purpose of RMI?</summary>
 </details>
 
-<details> what type of code connects the calling of an RMI function with its implementation?
-	<summary></summary>
+<details> TODO
+	<summary>what type of code connects the calling of an RMI function with its implementation?</summary>
 </details>
-<details> Behind the scenes, how does Java implement RMI calls to remote hosts? 
-	<summary></summary>
+
+<details>
+	<summary> Behind the scenes, how does Java implement RMI calls to remote hosts?</summary>
 </details>
-<details> What is the purpose of the RMI Registry? 
-	<summary>to connect the call to its implementation</summary>
+
+<details> to connect the call to its implementation
+	<summary>What is the purpose of the RMI Registry?</summary>
 </details>
 
 <details> in RMI, policy files are read by what type of object?
-	<summary> the security manager</summary>
+	<summary> the security manager </summary>
 </details>
 
-<details> (NA) Prior to the use of threading, how did Java achieve asynchronous I/O? 
-	<summary>Asynchronous I/O was achieved through non-blocking I/O classes.</summary>
+<details>  Asynchronous I/O was achieved through non-blocking I/O classes.
+	<summary>(NA) Prior to the use of threading, how did Java achieve asynchronous I/O?</summary>
 </details>
 
-<details> Readiness to complete a non-blocking fxn is determined by what Java method of the Selector class? 
-	<summary>The select() method.</summary>
+<details> The select() method.
+	<summary>Readiness to complete a non-blocking fxn is determined by what Java method of the Selector class? </summary>
 </details>
 
-<details> When a SelectionKey is obtained after select returns, what is its state? 
-	<summary> The state must be determined by calling one of 4 methods:
+<details> 
+	<summary>When a SelectionKey is obtained after select returns, what is its state? </summary>
+	The state must be determined by calling one of 4 methods:
 	1) isAcceptable,
 	2) isConnectable,
 	3) isReadable, and
-	4) isWritable.</summary>
+	4) isWritable.
 </details>
 
-<details> Why is use of non-blocking IO discouraged today?
-	<summary>Blocking calls within threads have better performance that non-blocking I/O today.</summary>
+<details> 
+	<summary>Why is use of non-blocking IO discouraged today?</summary>
+	Blocking calls within threads have better performance that non-blocking I/O today.
 </details>
 
-<details> Load balancers rely on a set of hosts, better known as what?
-	<summary>A server farm or a cluster.</summary>
+<details> 
+	<summary>Load balancers rely on a set of hosts, better known as what?</summary>
+	A server farm or a cluster.
 </details>
 
-<details> Load balancers use a variety of approaches to distribute traffic, but their approaches are implemented by what means? 
-	<summary> 1) IP address schemes, and 2) MAC address schemes.</summary>
+<details> 
+	<summary>Load balancers use a variety of approaches to distribute traffic, but their approaches are implemented by what means? </summary>
+	 1) IP address schemes
+	 2) MAC address schemes.
 </details>
 
-<details> A simple form of load balancing can be achieved by returning different addresses to DNS requests. What is this approach called?
-	<summary>DNS round robin.</summary>
+<details> 
+	<summary>A simple form of load balancing can be achieved by returning different addresses to DNS requests. What is this approach called?</summary>
+	DNS round robin.
 </details>
 
-<details> What HTTP header is used to maintain state across a load balanced cluster?
-	<summary>The cookie header is used to maintain state.</summary>
+<details> 
+	<summary>What HTTP header is used to maintain state across a load balanced cluster?</summary>
+	The cookie header is used to maintain state.
 </details>
-<details> What technique do two-arm load balancers typically rely upon to route traffic?
-	<summary>Destination NAT, or DNAT.</summary>
+<details> 
+	<summary>What technique do two-arm load balancers typically rely upon to route traffic?</summary>
+	What HTTP header is used to maintain state across a load balanced cluster?
 </details>
-<details> What are the two ways that a one-arm load balancer routes traffic?
-	<summary>A one-arm load balancer can use:
+<details>
+	<summary> What are the two ways that a one-arm load balancer routes traffic?</summary>
+	A one-arm load balancer can use:
 	1) a combination of DNAT and SNAT, or
-	2) MAC address responses, known as Direct Response</summary>
+	2) MAC address responses, known as Direct Response
 </details>
-<details>  What is the single most important concert for server programmers when load balancers are deployed? 
-	<summary>maintaining consistency of data that is shared among the cluster servers</summary>
+
+<details>  
+	<summary>What is the single most important concern for server programmers when load balancers are deployed? </summary>
+	maintaining consistency of data that is shared among the cluster servers<
 </details>
-<details> What approach is used by a Content Delivery Network (CDN) to distributed data?
-	<summary>CDN's distribute clusters at locations that are geographically closer to users and replicate the requested data as needed in order to maintain consistency.</summary>
+
+<details> 
+	<summary>What approach is used by a Content Delivery Network (CDN) to distributed data?</summary>
+	CDN's distribute clusters at locations that are geographically closer to users and replicate the requested data as needed in order to maintain consistency.
 </details>
-<details> How does Amazon's Simple Storage Service (S3) facilitate scaling?
-	<summary>Data uploaded to S3 is accessed through Amazon's load balanced clusters; the data may also be replicated across regional Amazon clusters</summary>
+
+<details> 
+	<summary>How does Amazon's Simple Storage Service (S3) facilitate scaling?</summary>
+	Data uploaded to S3 is accessed through Amazon's load balanced clusters; the data may also be replicated across regional Amazon clusters
 </details>
-<details> Why is the phrase, "BitTorrent client," a misnomer?
-	<summary> BitTorrent software, being a type of Peer-To-Peer software, comprises both a client and a server.</summary>
+
+<details> 
+	<summary>Why is the phrase, "BitTorrent client," a misnomer? </summary>
+	BitTorrent software, being a type of Peer-To-Peer software, comprises both a client and a server.
 </details>
-<details> How does Peer-To-Peer (P2P) architecture facilitate scaling?
-	<summary>P2P uses a horizontal, branching approach in which a program acting as a client can receive data and then later act as a server and pass the data to another program.</summary>
+<details> 
+	<summary>How does Peer-To-Peer (P2P) architecture facilitate scaling?</summary>
+	P2P uses a horizontal, branching approach in which a program acting as a client can receive data and then later act as a server and pass the data to another program.
 </details>
